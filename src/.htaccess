@@ -1,4 +1,9 @@
 RewriteEngine On
 
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} \.(css|jpg|gif|png|zip|rar|doc|xls|js|tif|tiff|docx|xlsx|ico)$
+	RewriteRule ^(.*)$ $1 [L,QSA]
+
 RewriteCond %{REQUEST_URI} !^(.+)\.(html|php)$
 	RewriteRule . %{REQUEST_URI}.html [R=301,L]
