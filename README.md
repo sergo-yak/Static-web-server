@@ -16,3 +16,5 @@
 * `make help` - show help info
 
 ### Enjoy!
+
+<a href="https://habr.com/ru/post/346086/">Resource</a>
